@@ -17,3 +17,5 @@ Route::post('/', 'TweetController@addTweet');
 Route::get('/{tweetId}', 'TweetController@showTweet');
 
 Route::post('/deletePost', 'TweetController@deleteTweet');
+Route::post('/tweet', 'TweetController@showEditTweet');
+Route::post('/editTweet', 'TweetController@editTweet');
