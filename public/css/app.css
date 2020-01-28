@@ -1,0 +1,36 @@
+.header {
+  grid-area: header;
+  background-color: lightblue;
+}
+
+.side-bar {
+  grid-area: sidebar;
+  background-color: lightgreen;
+}
+
+.content {
+  grid-area: content;
+  background-color: lightgrey;
+  overflow-wrap: break-word;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: lightblue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
+  grid-template-areas: "header header header header header" "sidebar content content content content" "sidebar content content content content" "sidebar content content content content" "footer footer footer footer footer";
+  gap: 10px;
+}
+
